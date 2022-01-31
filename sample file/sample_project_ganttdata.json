@@ -1,0 +1,91 @@
+{
+	"ganttTitle": "サンプルプロジェクト日程",
+	"tasks": [
+		{
+			"start": "2021-9-23",
+			"end": "2021-9-23",
+			"name": "初回MTG",
+			"id": "Task 0",
+			"progress": "100",
+			"memo": "基本仕様を決める",
+			"dependencies": []
+		},
+		{
+			"start": "2021-09-24",
+			"end": "2021-10-4",
+			"name": "テスト版設計",
+			"id": "Task 1",
+			"progress": "30",
+			"dependencies": [
+				"Task 0"
+			],
+			"memo": "Aさん主導"
+		},
+		{
+			"start": "2021-10-5",
+			"end": "2021-10-8",
+			"name": "テスト版製造",
+			"id": "Task 2",
+			"progress": "1",
+			"dependencies": [
+				"Task 1"
+			],
+			"memo": "電技室3Dプリンタ使用"
+		},
+		{
+			"start": "2021-10-9",
+			"end": "2021-10-10",
+			"name": "テスト",
+			"id": "Task 3",
+			"progress": "1",
+			"dependencies": [
+				"Task 2"
+			],
+			"memo": "発熱チェック、コネクタ等取り回しチェック・動作チェック"
+		},
+		{
+			"start": "2021-10-11",
+			"end": "2021-10-11",
+			"name": "中間報告",
+			"id": "Task 4",
+			"progress": "0",
+			"dependencies": [
+				"Task 3"
+			],
+			"memo": ""
+		},
+		{
+			"start": "2021-10-12",
+			"end": "2021-10-19",
+			"name": "仕様変更検討",
+			"id": "Task 5",
+			"progress": "0",
+			"dependencies": [
+				"Task 4"
+			],
+			"memo": ""
+		},
+		{
+			"start": "2021-10-20",
+			"end": "2021-11-7",
+			"name": "初版実装",
+			"id": "Task 6",
+			"progress": "0",
+			"dependencies": [
+				"Task 5"
+			],
+			"memo": ""
+		},
+		{
+			"start": "2021-10-20",
+			"end": "2021-11-7",
+			"name": "ドキュメント作成",
+			"id": "Task 7",
+			"progress": "0",
+			"dependencies": [
+				"Task 5"
+			],
+			"memo": ""
+		}
+	]
+}

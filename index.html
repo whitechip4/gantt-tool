@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gantt chart tool</title>
+        <link rel="stylesheet" href="./style/frappe-gantt.css" />
+        <link rel="stylesheet" href="./style/index.css" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!-- ガントチャート描画セクション -->
+        <div class="f-container">        
+            <div class="f-box",id="gantt-area">
+                <div class="ui-btn" id="ui-button">  
+                    ◀                
+                </div>
+                
+                <label for="view-select">表示</label>
+                <select id="view-select">
+                </select>
+                
+                <div class="gantt_area" id="gantt-area">
+                    <div class="chart-title" id="gantt-title"></div>
+
+                    <div class="container">                        
+                        <svg id="gantt"></svg>  
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 入力テキストボックスやボタン描画セクション（右側） -->
+            <div class="f-box" id="ui-area">
+                <div>
+                    <div class="input-area">
+                        <ul>
+                            <li class="input-name">
+                                <label for="name">タスク名</label>
+                                <input type="text" id="name" name="name"  autocomplete="off">
+                            </li>
+                            <li class="input-start-date">                        
+                                <label for="start-date">開始日</label>
+                                <input type="text" id="start-date" name="start-date"  autocomplete="off">
+                            </li>
+                            <li class="input-end-date">    
+                                <label for="end-date">終了日</label>
+                                <input type="text" id="end-date" name="end-date"  autocomplete="off">
+                            </li>
+
+                            <li class="input-task-progress">    
+                                <label for="task-progress">進捗</label>
+                                <input type="text" id="task-progress" name="task-progress"  autocomplete="off">
+                            </li>                  
+                            <li class="input-task-dependencies">    
+                                <label for="task-dependencies">依存先</label>
+                                <input type="text" id="task-dependencies" name="task-dependencies"  autocomplete="off">
+                            </li>                  
+                            
+                            <li class="input-task-memo">    
+                                <label for="task-memo">メモ</label>
+                                <input type="text" id="task-memo" name="task-memo"  autocomplete="off">
+                            </li>   
+                        </ul>
+                    </div>
+
+                    <div class="button-area">
+                        <ul>        
+                            <li>
+                                <div id="add-button" class="button-A button-div" type="submit" name="add-button" >New task</div>
+                            </li>
+                            <li>
+                                <div id="erase-button" class="button-A button-div" type="submit" name="erase-button" >Remove Task</div>
+                            </li>
+
+                            <li>
+                                <div id="save-button" class="button-A button-div" type="submit" name="save-button">Save</div>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="file" id="jsonfile-input" hidden />
+                                        <div id="load-button" class="button-A button-div" type="submit" name="load-button">Load</button>
+                                </label>
+                            </li>
+                            <li>
+                                <div id="img-button" class="button-A button-div" type="submit" name="save-button">Img Save</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/lib/moment.js"></script>
+        <script src="./js/lib/snap.svg-min.js"></script>
+        <script src="./js/lib/frappe-gantt.min.js"></script>
+        <script src="./js/lib/html2canvas.min.js"></script>
+        
+        <script src="./js/task.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

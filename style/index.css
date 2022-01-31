@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* custom frappe-gant class */
+.gantt .bar-progress {
+  fill: #9999ff !important;
+}
+
+.gantt .bar-label {
+  font-size: 16px !important;
+}
+
+.gantt .today-highlight {
+  fill: #f2ef4d !important;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', "Yu Gothic","メイリオ",sans-serif;
+  background: white;
+}
+
+.container {
+  display: block;
+  width: 80vw;
+  height: 70vh;
+  margin: 0 auto;
+  overflow: auto;
+  border: 1px solid #d8d8d8;
+  background-color: #fff;
+}
+
+#gantt-title {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  border-color: #83d7bc;
+  background-color: #83d7bc;
+  width: 65%;
+  margin: 10px auto;
+}
+
+.f-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 20px;
+}
+
+.input-area {
+  margin: 100px 0px auto auto;
+}
+
+.input-area ul li {
+  list-style: none;
+}
+
+.input-area ul li label {
+  margin-right: 20px;
+  width: 100px;
+  float: left;
+}
+
+.button-area {
+  margin: 20px 0px auto auto;
+}
+
+.button-area ul li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.button-div {
+  margin: 0 0px 12px;
+  padding: 0.5em 2em;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 170px;
+  display: inline-block;
+  font-size: 114%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*　buttonA　*/
+.button-A {
+  border: 3px solid #83d7bc;
+  background-color: #83d7bc;
+  color: #fff;
+}
+
+.button-A:hover {
+  border: 3px solid #83d7bc;
+  background-color: rgba(131, 215, 188, 0);
+  color: #83d7bc;
+}
+
+input {
+  border: 1.5px solid #83d7bc;
+  /* 枠線 */
+  border-radius: 3px;
+}
+
+input:focus {
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.f-box {
+  position: relative;
+}
+
+.ui-btn {
+  position: absolute;
+  top: 35px;
+  right: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  width: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #83d7bc;
+  content: '▶';
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
